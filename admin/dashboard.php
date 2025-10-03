@@ -17,7 +17,7 @@ $article_sql = "SELECT id, title, author, publish_date FROM articles ORDER BY pu
 $article_result = $conn->query($article_sql);
 
 // Fetch products
-$product_sql = "SELECT id, name, category, price FROM products ORDER BY created_at DESC";
+$product_sql = "SELECT id, name, category FROM products ORDER BY created_at DESC";
 $product_result = $conn->query($product_sql);
 
 // Fetch testimonials
@@ -84,7 +84,6 @@ $testimonial_result = $conn->query($testimonial_sql);
                     <th>ID</th>
                     <th>Name</th>
                     <th>Category</th>
-                    <th>Price</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -95,7 +94,6 @@ $testimonial_result = $conn->query($testimonial_sql);
                             <td><?php echo $product['id']; ?></td>
                             <td><?php echo htmlspecialchars($product['name']); ?></td>
                             <td><?php echo htmlspecialchars($product['category']); ?></td>
-                            <td><?php echo htmlspecialchars($product['price']); ?></td>
                             <td>
                                 <a href="edit_product.php?id=<?php echo $product['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
                                 <a href="delete_product.php?id=<?php echo $product['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
@@ -103,7 +101,7 @@ $testimonial_result = $conn->query($testimonial_sql);
                         </tr>
                     <?php } ?>
                 <?php else: ?>
-                    <tr><td colspan="5">No products found.</td></tr>
+                    <tr><td colspan="4">No products found.</td></tr>
                 <?php endif; ?>
             </tbody>
         </table>

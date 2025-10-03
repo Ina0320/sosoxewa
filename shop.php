@@ -44,8 +44,7 @@
             <div class="container topbar bg-primary d-none d-lg-block">
                 <div class="d-flex justify-content-between">
                     <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Jl. Baji Pamuji No.16</a></small>
                     </div>
                     <div class="top-link pe-2">
                     </div>
@@ -313,9 +312,7 @@
                                     echo '<div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">' . htmlspecialchars($row["category"]) . '</div>';
                                     echo '<div class="p-4 border border-secondary border-top-0 rounded-bottom">';
                                     echo '<h4>' . htmlspecialchars($row["name"]) . '</h4>';
-                                    echo '<p>' . htmlspecialchars($row["description"]) . '</p>';
                                     echo '<div>';
-                                    echo '<p class="text-dark fs-5 fw-bold mb-2">Mulai dari Rp ' . number_format($row["price"], 0, ',', '.') . '</p>';
                                     echo '<div class="text-center">';
                                     $whatsapp_number = '+6285657429602';
                                     $product_name = htmlspecialchars($row["name"]);

@@ -26,43 +26,36 @@ $stmt->close();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'] ?? '';
-    $description = $_POST['description'] ?? '';
-    $price = $_POST['price'] ?? '';
     $category = $_POST['category'] ?? '';
     $image = $product['image'];
 
-    // Validate price
-    if (!is_numeric($price)) {
-        $error = "Price must be a number.";
-    } else {
-        // Handle image upload
-        if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
-            $target_dir = "../uploads/";
-            $target_file = $target_dir . basename($_FILES["image"]["name"]);
-            $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-            $check = getimagesize($_FILES["image"]["tmp_name"]);
-            if ($check !== false) {
-                if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-                    $image = "uploads/" . basename($_FILES["image"]["name"]);
-                } else {
-                    $error = "Sorry, there was an error uploading your file.";
-                }
+    // Handle image upload
+    if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
+        $target_dir = "../uploads/";
+        $target_file = $target_dir . basename($_FILES["image"]["name"]);
+        $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+        $check = getimagesize($_FILES["image"]["tmp_name"]);
+        if ($check !== false) {
+            if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+                $image = "uploads/" . basename($_FILES["image"]["name"]);
             } else {
-                $error = "File is not an image.";
+                $error = "Sorry, there was an error uploading your file.";
             }
+        } else {
+            $error = "File is not an image.";
         }
+    }
 
-        if (empty($error)) {
-            $stmt = $conn->prepare("UPDATE products SET name = ?, description = ?, price = ?, image = ?, category = ? WHERE id = ?");
-            $stmt->bind_param("ssdssi", $name, $description, $price, $image, $category, $id);
-            if ($stmt->execute()) {
-                header("Location: dashboard.php");
-                exit();
-            } else {
-                $error = "Error updating product.";
-            }
-            $stmt->close();
+    if (empty($error)) {
+        $stmt = $conn->prepare("UPDATE products SET name = ?, image = ?, category = ? WHERE id = ?");
+        $stmt->bind_param("sssi", $name, $image, $category, $id);
+        if ($stmt->execute()) {
+            header("Location: dashboard.php");
+            exit();
+        } else {
+            $error = "Error updating product.";
         }
+        $stmt->close();
     }
 }
 ?>
@@ -85,14 +78,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" name="name" value="<?= htmlspecialchars($product['name']) ?>" required>
-        </div>
-        <div class="mb-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" id="description" name="description" required><?= htmlspecialchars($product['description']) ?></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="price" class="form-label">Price</label>
-            <input type="text" class="form-control" id="price" name="price" value="<?= htmlspecialchars($product['price']) ?>" required>
         </div>
         <div class="mb-3">
             <label for="category" class="form-label">Category</label>
