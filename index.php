@@ -99,7 +99,7 @@
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-md-12 col-lg-7">
-                        <h4 class="mb-3 text-secondary">Bibit Buah Unggul</h4>
+                        <h4 class="mb-3 text-secondary">Sosoxewa Makassar</h4>
                         <h1 class="mb-5 display-3 text-primary">Bibit Buah Unggul</h1>
                         <div class="position-relative mx-auto">
                             <input id="hero-search" class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="text" placeholder="Search">
@@ -111,7 +111,7 @@
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active rounded">
                                     <img src="img/hero-img-1.png" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
-                                    <a href="#" class="btn px-4 py-2 text-white rounded">Fruites</a>
+                                    <a href="#" class="btn px-4 py-2 text-white rounded"></a>
                                 </div>
                                 <div class="carousel-item rounded">
                                     <img src="img/hero-img-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
@@ -270,7 +270,6 @@
                     } else {
                         echo '<p>No products available.</p>';
                     }
-                    $conn->close();
                     ?>
                 </div>
             </div>
@@ -319,7 +318,7 @@
                             <div class="counter bg-white rounded p-5">
                                 <i class="fa fa-users text-secondary"></i>
                                 <h4>satisfied customers</h4>
-                                <h1>1963</h1>
+                                <h1>128</h1>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-3">
@@ -332,15 +331,8 @@
                         <div class="col-md-6 col-lg-6 col-xl-3">
                             <div class="counter bg-white rounded p-5">
                                 <i class="fa fa-users text-secondary"></i>
-                                <h4>quality certificates</h4>
-                                <h1>33</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
                                 <h4>Available Products</h4>
-                                <h1>789</h1>
+                                <h1>88</h1>
                             </div>
                         </div>
                     </div>
@@ -358,86 +350,81 @@
                     <h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">Client Name</h4>
-                                    <p class="m-0 pb-3">Profession</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                    $sql = "SELECT * FROM testimonials ORDER BY id DESC";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            $name = htmlspecialchars($row['client_name']);
+                            $profession = htmlspecialchars($row['profession']);
+                            $testimonial = htmlspecialchars($row['testimonial_text']);
+                            $image = !empty($row['image']) ? htmlspecialchars($row['image']) : 'img/testimonial-1.jpg';
+                            $rating = (int)$row['rating'];
+
+                            echo '<div class="testimonial-item img-border-radius bg-light rounded p-4">';
+                            echo '<div class="position-relative">';
+                            echo '<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>';
+                            echo '<div class="mb-4 pb-4 border-bottom border-secondary">';
+                            echo '<p class="mb-0">' . $testimonial . '</p>';
+                            echo '</div>';
+                            echo '<div class="d-flex align-items-center flex-nowrap">';
+                            echo '<div class="bg-secondary rounded">';
+                            echo '<img src="' . $image . '" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="' . $name . '">';
+                            echo '</div>';
+                            echo '<div class="ms-4 d-block">';
+                            echo '<h4 class="text-dark">' . $name . '</h4>';
+                            echo '<p class="m-0 pb-3">' . $profession . '</p>';
+                            echo '<div class="d-flex pe-5">';
+                            for ($i = 1; $i <= 5; $i++) {
+                                if ($i <= $rating) {
+                                    echo '<i class="fas fa-star text-primary"></i>';
+                                } else {
+                                    echo '<i class="fas fa-star"></i>';
+                                }
+                            }
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                    } else {
+                        // Default testimonials if none in database
+                        for ($i = 0; $i < 3; $i++) {
+                            echo '<div class="testimonial-item img-border-radius bg-light rounded p-4">';
+                            echo '<div class="position-relative">';
+                            echo '<i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>';
+                            echo '<div class="mb-4 pb-4 border-bottom border-secondary">';
+                            echo '<p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry\'s standard dummy text ever since the 1500s.</p>';
+                            echo '</div>';
+                            echo '<div class="d-flex align-items-center flex-nowrap">';
+                            echo '<div class="bg-secondary rounded">';
+                            echo '<img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="Client">';
+                            echo '</div>';
+                            echo '<div class="ms-4 d-block">';
+                            echo '<h4 class="text-dark">Client Name</h4>';
+                            echo '<p class="m-0 pb-3">Profession</p>';
+                            echo '<div class="d-flex pe-5">';
+                            echo '<i class="fas fa-star text-primary"></i>';
+                            echo '<i class="fas fa-star text-primary"></i>';
+                            echo '<i class="fas fa-star text-primary"></i>';
+                            echo '<i class="fas fa-star text-primary"></i>';
+                            echo '<i class="fas fa-star"></i>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
         <!-- Tastimonial End -->
 
+        <?php $conn->close(); ?>
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
@@ -450,86 +437,15 @@
                                 <p class="text-secondary mb-0">Bibit Buah Unggul</p>
                             </a>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mx-auto">
-                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="d-flex justify-content-end pt-3">
-                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-light mb-3">Why People Like us!</h4>
-                            <p class="mb-4">typesetting, remaining essentially unchanged. It was 
-                                popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Shop Info</h4>
-                            <a class="btn-link" href="">About Us</a>
-                            <a class="btn-link" href="">Contact Us</a>
-                            <a class="btn-link" href="">Privacy Policy</a>
-                            <a class="btn-link" href="">Terms & Condition</a>
-                            <a class="btn-link" href="">Return Policy</a>
-                            <a class="btn-link" href="">FAQs & Help</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="">My Account</a>
-                            <a class="btn-link" href="">Shop details</a>
-                            <a class="btn-link" href="">Shopping Cart</a>
-                            <a class="btn-link" href="">Wishlist</a>
-                            <a class="btn-link" href="">Order History</a>
-                            <a class="btn-link" href="">International Orders</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-light mb-3">Contact</h4>
-                            <p>Address: 1429 Netus Rd, NY 48247</p>
-                            <p>Email: Example@gmail.com</p>
-                            <p>Phone: +0123 4567 8910</p>
-                            <p>Payment Accepted</p>
-                            <img src="img/payment.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
         <!-- Footer End -->
 
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright bg-dark py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 my-auto text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
-
+      
 
 
         <!-- Back to Top -->
